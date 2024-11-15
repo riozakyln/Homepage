@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+@media (max-width: 1536px) {
+    .container {
+        max-width: 1280px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        max-width: 475px;
+    }
+}
+
+@media (max-width: 475px) {
+    .container {
+        max-width: 100%;
+        padding-left: 1rem; /* Optional: increase padding on small screens */
+        padding-right: 1rem; /* Optional: increase padding on small screens */
+    }
+}
+body {
+    width: 100%;
+    margin: 0;
+    /* background: black; */
+    scroll-behavior: smooth;
+    color: black;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+header {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-evenly;
+    background-color: rgba(rgba(77, 2, 2, 0.425), green, blue, alpha);
+    border-radius: 3px;
+}
+nav  ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    gap: 15px;
+    font-size: larger;
+    margin-left: 300px;
+}
+nav ul li {
+    margin: 20px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover :not("sit"){
+    border: 1px solid darkred;
+    align-content: center;
+    border-radius: 5px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.425);
+}
+.pro {
+    text-align: left;
+    color: black;
+    border: 1px solid darkred;
+    align-content: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.425);
+}
+#homepage {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 2px 15px rgba(54, 19, 207, 0.425) inset;
+    color: red;
+    text-shadow: 2px 2px darkred;
+    font-size: xx-large;
+    height: 500px;
+    align-content: center;
+    font-family: "Faculty Glyphic", sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+#projects {
+    width: 100%;
+    margin-bottom: 350px;
+    padding-left: 8px;
+    height: 200px;
+}
+#projects p {
+    font-size: large;
+    margin: 40px 0 40px 0;
+}
+#projects h1, #articles h1, #education h1, #contact h1 {
+    color: brown;
+    font-size: xx-large;
+}
+#articles {
+    width: 100%;
+    margin-bottom: 300px;
+    padding-left: 8px;
+    height: 200px;
+}
+#articles p {
+    margin: 40px 0 40px 0;
+    font-size: large;
+}
+#education {
+    width: 100%;
+    margin-bottom: 250px;
+    padding-left: 8px;
+    height: 200px;
+}
+#education p {
+    margin: 40px 0 40px 0;
+    font-size: large;
+}
+#education ul li {
+    margin: 40px 0 40px 0;
+    font-size: large;
+    list-style: none;
+}
+#contact {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: bisque;
+}
+#education p {
+    font-size: x-large;
+}
+.sit {
+    color: blue;
+}
+.sit::after {
+    color:blueviolet;
+}
